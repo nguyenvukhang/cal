@@ -2,7 +2,7 @@ import ics from 'ics'
 import moment from 'moment'
 import fs from 'fs'
 
-const weekNames = JSON.parse(fs.readFileSync('weekNames.json'))
+const weekNames = JSON.parse(fs.readFileSync('weeks.json'))
 
 const AYstart = moment('02-08-2021', 'DD-MM-YYYY')
 

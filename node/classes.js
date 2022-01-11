@@ -14,12 +14,12 @@ function dayNum(str) {
 
 function makeEvents(modules, semStart) {
   const res = []
-  modules.forEach((module) => {
-    module.weeks.forEach((w, i) => {
+  modules.forEach((m) => {
+    m.weeks.forEach((w, i) => {
       if (w) {
         const date = semStart.clone()
         date.add(i, 'weeks')
-        const events = module.timeslots.map((ts) => {
+        const events = m.timeslots.map((ts) => {
           const [year, month, day] = date
             .add(dayNum(ts.day), 'days')
             .format('YYYY-MM-DD')
@@ -28,7 +28,7 @@ function makeEvents(modules, semStart) {
           const [hour, minute] = ts.start.split(':').map((e) => parseInt(e))
           return {
             start: [year, month, day, hour, minute],
-            title: ts.type ? `${module.name}: ${ts.type}` : ts.title,
+            title: ts.type ? `${m.module}: ${ts.type}` : ts.title,
             location: ts.location,
             duration: ts.duration,
           }
