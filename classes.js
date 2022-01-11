@@ -56,5 +56,5 @@ function writeICS(res, output) {
   }
 }
 
-const whackICS = true
-whackICS ? writeICS(res, 'output.ics') : console.log(res)
+const exportICS = true
+exportICS ? writeICS(res, 'classes.ics') : console.log(res)

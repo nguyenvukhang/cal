@@ -28,3 +28,19 @@ if (error) {
 } else {
   console.log(value)
 }
+
+function writeICS(res, output) {
+  const { error, value } = ics.createEvents(res)
+
+  if (error) {
+    console.log(error)
+  } else {
+    console.log(value)
+    fs.writeFile(output, value, function (err) {
+      if (err) return console.log(err)
+    })
+  }
+}
+
+const exportICS = true
+exportICS ? writeICS(res, 'weeks.ics') : console.log(res)
