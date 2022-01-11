@@ -1,7 +1,9 @@
 import moment from 'moment'
 import ics from 'ics'
-import modules from './modules.js'
+import yaml from 'js-yaml'
+import fs from 'fs'
 
+const modules = yaml.load(fs.readFileSync('modules.yml', 'utf8'));
 const semStart = moment('2022-01-10', 'YYYY-MM-DD')
 
 function dayNum(str) {
