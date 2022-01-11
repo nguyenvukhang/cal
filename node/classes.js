@@ -3,7 +3,7 @@ import ics from 'ics'
 import yaml from 'js-yaml'
 import fs from 'fs'
 
-const modules = yaml.load(fs.readFileSync('modules.yml', 'utf8'));
+const modules = yaml.load(fs.readFileSync('modules.yml', 'utf8'))
 const semStart = moment('2022-01-10', 'YYYY-MM-DD')
 
 function dayNum(str) {
@@ -43,15 +43,18 @@ function makeEvents(modules, semStart) {
 
 const res = makeEvents(modules, semStart)
 
-function writeICS(res) {
+function writeICS(res, output) {
   const { error, value } = ics.createEvents(res)
 
   if (error) {
     console.log(error)
   } else {
     console.log(value)
+    fs.writeFile(output, value, function (err) {
+      if (err) return console.log(err)
+    })
   }
 }
 
 const whackICS = true
-whackICS ? writeICS(res) : console.log(res)
+whackICS ? writeICS(res, 'output.ics') : console.log(res)
