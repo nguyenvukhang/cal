@@ -17,9 +17,9 @@ function makeEvents(modules, semStart) {
   modules.forEach((m) => {
     m.weeks.forEach((w, i) => {
       if (w) {
-        const date = semStart.clone()
-        date.add(i, 'weeks')
         const events = m.timeslots.map((ts) => {
+          const date = semStart.clone()
+          date.add(i, 'weeks')
           const [year, month, day] = date
             .add(dayNum(ts.day), 'days')
             .format('YYYY-MM-DD')
