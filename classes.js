@@ -29,7 +29,7 @@ function makeEvents(modules, semStart) {
           return {
             start: [year, month, day, hour, minute],
             title: ts.type ? `${m.module}: ${ts.type}` : ts.title,
-            location: ts.location,
+            location: ts.location || '',
             duration: ts.duration,
           }
         })
