@@ -32,6 +32,24 @@
       type: LEC
       location: >-
         https://nus-sg.zoom.us/j/83722816709?pwd=KzlCZzBqZWcvYno5azVpYmJLOTVqZz09
+- module: HSI1000
+  weeks: [false, false, false, false, false, 6, false, false, false, false, false, false, false, false]
+  timeslots:
+    - day: Thursday
+      start: '09:00'
+      duration:
+        hours: 3
+      type: Exploratorium
+      location: S12-04-02
+- module: HSI1000
+  weeks: [false, false, false, false, false, false, false, false, false, false, false, 11, false, false]
+  timeslots:
+    - day: Monday
+      start: '09:00'
+      duration:
+        hours: 3
+      type: Exploratorium
+      location: S12-04-02
 - module: CS1010S
   weeks: [1, 2, 3, 4, 5, 6, false, 7, 8, 9, 10, 11, 12, 13]
   timeslots:
