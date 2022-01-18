@@ -3,7 +3,7 @@ import ics from 'ics'
 import yaml from 'js-yaml'
 import fs from 'fs'
 
-const modules = yaml.load(fs.readFileSync('modules.yml', 'utf8'))
+const data = yaml.load(fs.readFileSync('modules.yml', 'utf8'))
 const semStart = moment('2022-01-10', 'YYYY-MM-DD')
 
 function dayNum(str) {
@@ -12,14 +12,29 @@ function dayNum(str) {
   return day[s]
 }
 
-function makeEvents(modules, semStart) {
+function getWeeks({ weeks = 13, recess = 7 }) {
+  const a = [...Array(weeks).keys()]
+  const res = {}
+  a.forEach((e) => {
+    const key = e + 1
+    res[key] = key >= recess ? key : key - 1
+  })
+  return res
+}
+
+function makeEvents(data, semStart, weekDist) {
+  const all = Object.keys(data)
   const res = []
-  modules.forEach((m) => {
-    m.weeks.forEach((w, i) => {
-      if (w) {
+  all.forEach((module) => {
+    if (!(module in data)) {
+      return
+    }
+    data[module].forEach((m) => {
+      m.weeks.forEach((w) => {
         const events = m.timeslots.map((ts) => {
           const date = semStart.clone()
-          date.add(i, 'weeks')
+          // console.log('week is', w, 'distance is', weekDist[w], typeof weekDist[w])
+          date.add(weekDist[w], 'weeks')
           const [year, month, day] = date
             .add(dayNum(ts.day), 'days')
             .format('YYYY-MM-DD')
@@ -28,20 +43,20 @@ function makeEvents(modules, semStart) {
           const [hour, minute] = ts.start.split(':').map((e) => parseInt(e))
           return {
             start: [year, month, day, hour, minute],
-            title: ts.type ? `${m.module}: ${ts.type}` : ts.title,
+            title: ts.type ? `${module}: ${ts.type}` : ts.title,
             location: ts.location || '',
             duration: ts.duration,
           }
         })
         res.push(...events)
-      }
+      })
     })
   })
-
   return res
 }
 
-const res = makeEvents(modules, semStart)
+const weekDist = getWeeks({ recess: 7 })
+const res = makeEvents(data, semStart, weekDist)
 
 function writeICS(res, output) {
   const { error, value } = ics.createEvents(res)
