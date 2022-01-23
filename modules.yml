@@ -1,131 +1,151 @@
-# MA2219: Introduction to Geometry {{{
-
-MA2219:
-- weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Monday
-      start: '16:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: LT28
-    - day: Thursday
-      start: '16:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: LT28
-
+CS1010S: # Programming Methodology {{{
+  - weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Wednesday
+        type: LEC
+        start: '14:00'
+        duration:
+          hours: 2
+        location: >-
+          https://nus-sg.zoom.us/j/89336627518?pwd=RE9Vekxsb0NiQ3UyRmx0Lzhta2FCZz09
+  - weeks: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Friday
+        type: REC
+        start: '13:00'
+        duration:
+          hours: 1
+        location: E-Learning
+  - weeks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Tuesday
+        type: TUT
+        start: '16:00'
+        duration:
+          hours: 1
+        location: COM1-B109
 # }}}
-# HSS1000: Understanding Social Complexity {{{
-
-HSS1000:
-- weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Wednesday
-      start: '8:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: https://nus-sg.zoom.us/j/82861841265
-
+DTK1234: # Design Thinking {{{
+  - weeks: [3, 5, 7, 9, 11]
+    timeslots:
+      - day: Thursday
+        type: LEC
+        start: '14:00'
+        duration:
+          hours: 2
+        location: TP-SR7
 # }}}
-# CS1010S: Programming Methodology {{{
+HSS1000: # Understanding Social Complexity {{{
+  - weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Wednesday
+        type: LEC
+        start: '8:00'
+        duration:
+          hours: 2
+        location: https://nus-sg.zoom.us/j/82861841265
+  - weeks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Monday
+        type: TUT
+        start: '14:00'
+        duration:
+          hours: 1
+        location: AS1-0203
+# }}}
+HSI1000: # How Science Works, Why Science Works {{{
+  - weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Thursday
+        type: LEC
+        start: '12:00'
+        duration:
+          hours: 2
+        location: >-
+          https://nus-sg.zoom.us/j/83722816709?pwd=KzlCZzBqZWcvYno5azVpYmJLOTVqZz09
+  - weeks: [3, 7, 11]
+    timeslots:
+      - day: Tuesday
+        type: WS
+        start: '12:00'
+        duration:
+          hours: 3
+        location: S16-03-0506
+  - weeks: [6]
+    timeslots:
+      - day: Thursday
+        type: Exploratorium
+        start: '09:00'
+        duration:
+          hours: 3
+        location: S12-04-02
+  - weeks: [11]
+    timeslots:
+      - day: Monday
+        type: Exploratorium
+        start: '09:00'
+        duration:
+          hours: 3
+        location: S12-04-02
+# }}}
+MA2219: # Introduction to Geometry {{{
+  - weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Monday
+        start: '16:00'
+        duration:
+          hours: 2
+        type: LEC
+        location: LT28
+      - day: Thursday
+        start: '16:00'
+        duration:
+          hours: 2
+        type: LEC
+        location: LT28
+# }}}
+PC1432: # Physics IIE {{{
+  - weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Wednesday
+        type: LEC
+        start: '10:00'
+        duration:
+          hours: 2
+        location: >-
+          https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
+      - day: Friday
+        type: LEC
+        start: '10:00'
+        duration:
+          hours: 2
+        location: >-
+          https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
+  - weeks: [3, 5, 7, 9, 11, 13]
+    timeslots:
+      - day: Wednesday
+        type: TUT
+        start: '19:00'
+        duration:
+          hours: 1
+        location: Physical, TBC
+# }}}
 
-CS1010S:
-- weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Wednesday
-      start: '14:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: >-
-        https://nus-sg.zoom.us/j/89336627518?pwd=RE9Vekxsb0NiQ3UyRmx0Lzhta2FCZz09
-- weeks: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Thursday
-      start: '13:00'
-      duration:
-        hours: 1
-      type: REC
-      location: E-Learning
-- weeks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Tuesday
-      start: '16:00'
-      duration:
-        hours: 1
-      type: TUT
-      location: COM1-B109
+# No classes:
+# HS1401S: Career Compass
+# IS1103: Ethics in Computing
+# MA2002: Calculus
 
-# }}}
-# PC1432: Physics IIE {{{
-
-PC1432:
-- weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Wednesday
-      start: '10:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: >-
-        https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
-    - day: Friday
-      start: '10:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: >-
-        https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
-
-# }}}
-# HSI1000: How Science Works, Why Science Works {{{
-
-HSI1000:
-- weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-  timeslots:
-    - day: Thursday
-      start: '12:00'
-      duration:
-        hours: 2
-      type: LEC
-      location: >-
-        https://nus-sg.zoom.us/j/83722816709?pwd=KzlCZzBqZWcvYno5azVpYmJLOTVqZz09
-- weeks: [3, 7, 11]
-  timeslots:
-    - day: Tuesday
-      start: '12:00'
-      duration:
-        hours: 3
-      type: WS
-      location: S16-03-0506
-- weeks: [6]
-  timeslots:
-    - day: Thursday
-      start: '09:00'
-      duration:
-        hours: 3
-      type: Exploratorium
-      location: S12-04-02
-- weeks: [11]
-  timeslots:
-    - day: Monday
-      start: '09:00'
-      duration:
-        hours: 3
-      type: Exploratorium
-      location: S12-04-02
-
-# }}}
-# DTK1234: Design Thinking {{{
-# }}}
-# HS1401S: Career Compass {{{
-# }}}
-# IS1103: Ethics in Computing {{{
-# }}}
-# MA2002: Calculus {{{
-# }}}
 # TODO: HSI workshops
-# TODO: DTK all
+# TODO: HSS tutorials
+# TODO: add ical parser (https://www.npmjs.com/package/node-ical)
+# [x] CS1010S -> REC missing zoom link
+# [x] DTK1234
+# [ ] HSI1000
+# [ ] HSS1000
+# [ ] MA2219
+
+# [x] HS1401S
+# [x] IS1103
+# [x] MA2002
+# [x] PC1432
