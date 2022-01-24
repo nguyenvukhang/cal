@@ -6,30 +6,29 @@ CS1010S: # Programming Methodology {{{
         start: '14:00'
         duration:
           hours: 2
-        location: >-
-          https://nus-sg.zoom.us/j/89336627518?pwd=RE9Vekxsb0NiQ3UyRmx0Lzhta2FCZz09
+        location: https://nus-sg.zoom.us/j/89336627518?pwd=RE9Vekxsb0NiQ3UyRmx0Lzhta2FCZz09
   - weeks: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
     timeslots:
       - day: Friday
         type: REC
-        start: '13:00'
+        start: '12:00'
         duration:
           hours: 1
-        location: E-Learning
+        location: https://nus-sg.zoom.us/j/81802081694?pwd=cGIvamloYnpteVNTTHNYRFRWOXZIQT09
   - weeks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
     timeslots:
-      - day: Tuesday
+      - day: Monday
         type: TUT
-        start: '16:00'
+        start: '11:00'
         duration:
           hours: 1
-        location: COM1-B109
+        location: I3-0339
 # }}}
 DTK1234: # Design Thinking {{{
   - weeks: [3, 5, 7, 9, 11]
     timeslots:
       - day: Thursday
-        type: LEC
+        type: TUT
         start: '14:00'
         duration:
           hours: 2
@@ -61,8 +60,7 @@ HSI1000: # How Science Works, Why Science Works {{{
         start: '12:00'
         duration:
           hours: 2
-        location: >-
-          https://nus-sg.zoom.us/j/83722816709?pwd=KzlCZzBqZWcvYno5azVpYmJLOTVqZz09
+        location: https://nus-sg.zoom.us/j/83722816709?pwd=KzlCZzBqZWcvYno5azVpYmJLOTVqZz09
   - weeks: [3, 7, 11]
     timeslots:
       - day: Tuesday
@@ -103,6 +101,14 @@ MA2219: # Introduction to Geometry {{{
           hours: 2
         type: LEC
         location: LT28
+  - weeks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    timeslots:
+      - day: Tuesday
+        start: '11:00'
+        duration:
+          hours: 1
+        type: TUT
+        location: S17-0406
 # }}}
 PC1432: # Physics IIE {{{
   - weeks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
@@ -112,15 +118,13 @@ PC1432: # Physics IIE {{{
         start: '10:00'
         duration:
           hours: 2
-        location: >-
-          https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
+        location: https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
       - day: Friday
         type: LEC
         start: '10:00'
         duration:
           hours: 2
-        location: >-
-          https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
+        location: https://nus-sg.zoom.us/j/87224482307?pwd=VFhsdjFUdUViYWk4YnQ5MXBLZ0lPdz09
   - weeks: [3, 5, 7, 9, 11, 13]
     timeslots:
       - day: Wednesday
@@ -129,6 +133,14 @@ PC1432: # Physics IIE {{{
         duration:
           hours: 1
         location: Physical, TBC
+  - weeks: [5, 7]
+    timeslots:
+      - day: Thursday
+        type: LAB
+        start: '09:00'
+        duration:
+          hours: 3
+        location: S11-0302
 # }}}
 
 # No classes:
@@ -136,16 +148,4 @@ PC1432: # Physics IIE {{{
 # IS1103: Ethics in Computing
 # MA2002: Calculus
 
-# TODO: HSI workshops
-# TODO: HSS tutorials
-# TODO: add ical parser (https://www.npmjs.com/package/node-ical)
-# [x] CS1010S -> REC missing zoom link
-# [x] DTK1234
-# [ ] HSI1000
-# [ ] HSS1000
-# [ ] MA2219
-
-# [x] HS1401S
-# [x] IS1103
-# [x] MA2002
-# [x] PC1432
+# https://nusmods.com/timetable/sem-2/share?CS1010S=TUT:05,REC:08,LEC:1&DTK1234=TUT:O35&HS1401S=&HSI1000=LEC:1,WS:C5,LAB:2&HSS1000=LEC:1,TUT:W07&IS1103=&MA2002=LEC:1&MA2219=TUT:1,LEC:1&PC1432=LEC:1,TUT:3,LAB:5
