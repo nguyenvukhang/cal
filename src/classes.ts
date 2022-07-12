@@ -6,7 +6,7 @@ import fs from 'fs'
 const data = yaml.load(fs.readFileSync('modules.yml', 'utf8'))
 const semStart = moment('2022-01-10', 'YYYY-MM-DD')
 
-function dayNum(str) {
+function dayNum(str: string) {
   const day = { mon: 0, tue: 1, wed: 2, thu: 3, fri: 4, sat: 5, sun: 6 }
   const s = str.slice(0, 3).toLowerCase()
   return day[s]
