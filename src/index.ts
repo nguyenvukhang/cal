@@ -1,5 +1,3 @@
-// import { dayIndex } from './day-index'
-// import { getWeeks } from './get-weeks'
 import moment from 'moment'
 import type { Moment } from 'moment'
 import weekNames from '../data/json/weeks.json'
@@ -9,7 +7,8 @@ const weekZeroMonday = moment('01-08-2022', 'DD-MM-YYYY')
 /**
  * gets an array of pairs:
  * [
- *   ['<YYYY-MM-DD>', '<Name of week>']
+ *   ['<YYYY-MM-DD>', '<Name of week>'],
+ *   ...
  * ]
  *
  * @param {string[]} weekNames
