@@ -1,5 +1,6 @@
-import fs from 'fs'
-
-export function readJSON(filepath: string) {
-  return JSON.parse(fs.readFileSync(filepath).toString())
+/**
+ * useful to convert YYYY-MM-DD to [YYYY, MM, DD]
+ */
+export function dashedStringToNumberedArray(str: string): number[] {
+  return str.split('-').map((e) => parseInt(e))
 }
