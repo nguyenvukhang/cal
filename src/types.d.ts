@@ -25,7 +25,7 @@ export type Timeslot = {
 
 export type LessonData = {
   weeks: number[]
-  timeslots: Timeslot
+  timeslots: Timeslot[]
 }
 
 export type ModuleData = LessonData[]

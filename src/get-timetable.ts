@@ -14,6 +14,9 @@ class Timetable {
     this.moduleCodes = Object.keys(timetable)
     this.data = timetable
   }
+  getLessons(moduleCode: string): ModuleData {
+    return this.data[moduleCode] || []
+  }
 }
 
 export const timetable = new Timetable(yamlData)
