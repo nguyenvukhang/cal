@@ -2,23 +2,22 @@ import { timetable } from '../src/get-timetable'
 import { LessonData, Timeslot } from '../src/types'
 import { validModuleCode } from '../src/utils'
 
+const days = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+]
+
 function assertTimeslots(timeslots: Timeslot[]) {
-  describe('timeslots', () => {
-    expect(timeslots).toBeInstanceOf(Array)
-    timeslots.forEach((ts, tsIndex) => {
-      test(`data #${tsIndex}`, () => {
-        expect([
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday',
-          'Sunday',
-        ]).toContain(ts.day)
-      })
+  expect(timeslots).toBeInstanceOf(Array)
+  timeslots.forEach((ts, tsIndex) => {
+    test(`timeslot data #${tsIndex}`, () => {
+      expect(days).toContain(ts.day)
     })
-    // weeks.forEach((n) => expect(typeof n).toBe('string'))
   })
 }
 
